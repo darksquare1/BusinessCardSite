@@ -1,0 +1,17 @@
+div.info{
+    padding: 5px;
+    margin:5%;
+    border:ridge;
+    text-align: center;
+    border-width: 5px;
+    border-color:aliceblue;
+    background:linear-gradient(rgb(250, 239, 239),aliceblue);
+}
+p,a{
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
