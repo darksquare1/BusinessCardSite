@@ -1,6 +1,13 @@
+body{
+    
+    background-color: rgb(245, 235, 235);
+}
 div.info{
-    padding: 5px;
-    margin:5%;
+    margin-top: 10%;
+    padding: 1%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     border:ridge;
     text-align: center;
     border-width: 5px;
@@ -9,7 +16,8 @@ div.info{
 }
 p,a{
     font-family: 'Montserrat', sans-serif;
-    font-style: bold;
+    font-weight: bold;
+
 }
 a{
     text-decoration: none;
