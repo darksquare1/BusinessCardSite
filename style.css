@@ -5,7 +5,8 @@ body{
 div.info{
     margin-top: 10%;
     padding: 1%;
-    width: 50%;
+    width: 60%;
+    min-width: 56%;
     margin-left: auto;
     margin-right: auto;
     border:ridge;
@@ -14,12 +15,69 @@ div.info{
     border-color:aliceblue;
     background:linear-gradient(rgb(250, 239, 239),aliceblue);
 }
-p,a{
+span{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    text-shadow: 1px 2px 1px grey;
+    font-size: 30px;
+
+    
 
 }
 a{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     text-decoration: none;
-    text-align: center;
+}
+div.links{
+    min-height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background:linear-gradient(rgb(236, 229, 229),rgb(248, 239, 239));
+ 
+
+}   
+a:hover{
+    color:black;
+}
+.fa-telegram, .fa-vk, .fa-github, .fa-steam{
+    padding-top: 3%;
+
+    padding-bottom: 3%;
+    font-size: 100px;
+    color:#c3889a;
+}
+div.icons{
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+div.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 400px){
+    div.info{
+        margin-top: 30%;
+        width: 80%;
+    }
+   span{
+    font-size: 12px;
+    text-shadow: 0.5px 1px 0.5px grey;
+   }
+   div.icons{
+   font-size: 0.5rem;
+   }
+   div.links{
+    margin-top: 5%;
+    margin-bottom: 5%;
+   }
+    
 }
