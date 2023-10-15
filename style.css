@@ -63,13 +63,50 @@ div.name{
     align-items: center;
     justify-content: center;
 }
-@media(max-width: 400px){
+@media(max-width: 1200px){
     div.info{
-        margin-top: 30%;
-        width: 80%;
+        margin-top: 15%;
+        width: 50%;
     }
    span{
-    font-size: 12px;
+    font-size: 26px;
+    text-shadow: 0.5px 1px 0.5px grey;
+   }
+   div.icons{
+   font-size: 0.8rem;
+   }
+   div.links{
+    margin-top: 3%;
+    margin-bottom: 3%;
+   }
+    
+}
+
+@media(max-width: 920px){
+    div.info{
+        margin-top: 15%;
+        width: 70%;
+    }
+   span{
+    font-size: 25px;
+    text-shadow: 0.5px 1px 0.5px grey;
+   }
+   div.icons{
+   font-size: 0.8rem;
+   }
+   div.links{
+    margin-top: 4%;
+    margin-bottom: 4%;
+   }
+    
+}
+@media(max-width: 440px){
+    div.info{
+        margin-top: 30%;
+        width: 85%;
+    }
+   span{
+    font-size: 14px;
     text-shadow: 0.5px 1px 0.5px grey;
    }
    div.icons{
@@ -78,6 +115,20 @@ div.name{
    div.links{
     margin-top: 5%;
     margin-bottom: 5%;
+   }
+    
+}
+@media(max-width: 200px){
+    div.info{
+        margin-top: 30%;
+        width: 80%;
+    }
+   span{
+    font-size: 8px;
+    text-shadow: 0.5px 1px 0.5px grey;
+   }
+   div.icons{
+   font-size: 0.3rem;
    }
     
 }
