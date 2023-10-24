@@ -42,7 +42,7 @@
             imageVisible = false;
         } else {
             image = new Image();
-            image.src = 'static/images/sf.jpg'; // Укажите путь к вашей картинке
+            image.src = 'static/images/sf.jpg'; 
             document.body.appendChild(image);
             image.classList.add('sf');
             imageVisible = true;
@@ -57,8 +57,8 @@
             setTimeout(function() {
                 document.body.removeChild(image);
                 imageVisible = false;
-            }, 500); // Показываем картинку на 500 миллисекунд
-            keysPressed = {}; // Сбрасываем состояние клавиш после показа картинки
+            }, 500);
+            keysPressed = {};
         }
     });
 
