@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/023e5240b7.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div class="info">
@@ -28,5 +29,41 @@
     </div>  
     </div>
 </div>
+ 
+<script>
+    var keysPressed = {};
+    var imageVisible = false;
+    var image;
+
+    function toggleImageVisibility() {
+        if (imageVisible) {
+            document.body.removeChild(image);
+            imageVisible = false;
+        } else {
+            image = new Image();
+            image.src = 'static/images/sf.jpg'; // Укажите путь к вашей картинке
+            document.body.appendChild(image);
+            image.classList.add('sf');
+            imageVisible = true;
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        keysPressed[event.key] = true;
+
+        if (keysPressed['z'] && keysPressed['x'] && keysPressed['c'] && !imageVisible) {
+            toggleImageVisibility();
+            setTimeout(function() {
+                document.body.removeChild(image);
+                imageVisible = false;
+            }, 500); // Показываем картинку на 500 миллисекунд
+            keysPressed = {}; // Сбрасываем состояние клавиш после показа картинки
+        }
+    });
+
+    document.addEventListener('keyup', function(event) {
+        keysPressed[event.key] = false;
+    });
+</script>
 </body>
 </html>

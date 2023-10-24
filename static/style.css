@@ -1,6 +1,15 @@
 body{
     background-color:#f5ebeb
 }
+img.sf{
+    width:250px;
+    height: 250px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    border-radius: 5px;
+}
 div.info{
     margin-top:10%;
     padding:1%;
