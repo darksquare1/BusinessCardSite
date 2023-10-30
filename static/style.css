@@ -1,14 +1,28 @@
 body{
-    background-color:#f5ebeb
+    background-color:#f5ebeb;
 }
-img.sf{
+
+#imageContainer {
+    display: none;
+}
+img#sniper{
+    margin-top:65px;
+    margin-right:600px;
     width:250px;
-    height: 250px;
-    display:block;
-    margin-left: auto;
+    height:250px;
+}
+img#sf{
+    width:350px;
+    height: 350px;
+    margin-left: 100px;
     margin-right: auto;
-    margin-top:50px;
-    border-radius:10px;
+}
+img#coil{
+    position:absolute;
+    bottom:20%;
+    left:50%;
+    display:none;
+    width:100px;
 }
 div.info{
     margin-top:10%;
@@ -66,6 +80,7 @@ div.name{
     display:flex;
     justify-content:center
 }
+
 @media (max-width:920px){
     div.info{
         width:70%

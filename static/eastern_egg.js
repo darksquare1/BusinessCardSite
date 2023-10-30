@@ -1,33 +1,41 @@
-var keysPressed = {};
-    var imageVisible = false;
-    var image;
 
-    function toggleImageVisibility() {
-        if (imageVisible) {
-            document.body.removeChild(image);
-            imageVisible = false;
-        } else {
-            image = new Image();
-            image.src = 'static/images/sf.jpg'; 
-            document.body.appendChild(image);
-            image.classList.add('sf');
-            imageVisible = true;
-        }
-    }
+let currentInput = "";
+let display=document.getElementById("imageContainer");
+let flag=false;
+let coil_visable=false;
+function disappear(){
+    document.getElementById("coil").style.display="none";
+    coil_visable=false;
+}
+function used_coil(){
+    coil_visable=true;
+    document.getElementById("coil").style.display="inline";
+    setTimeout(disappear,700);
+}
+document.addEventListener("keydown", function(event) {
+        
+    currentInput+=event.key;
+    console.log(currentInput);    
+        if (currentInput.includes("letmedie")) {
+            display.style.display = "flex";
+            currentInput="";
+            flag=true;
+            }
+        if (flag){
+            if(event.key=="z" && !(coil_visable)){
+                document.getElementById("coil").style.left="50%";
+                used_coil();
+            }
+            if(event.key=="x" && !(coil_visable)){
+                document.getElementById("coil").style.left="60%";
+                used_coil();
+            }
+            if(event.key=="c" && !(coil_visable)){
+                used_coil();
+            }
+        }    
+} 
+);
+    
 
-    document.addEventListener('keydown', function(event) {
-        keysPressed[event.key] = true;
-
-        if (keysPressed['z'] && keysPressed['x'] && keysPressed['c'] && !imageVisible) {
-            toggleImageVisibility();
-            setTimeout(function() {
-                document.body.removeChild(image);
-                imageVisible = false;
-            }, 500);
-            keysPressed = {};
-        }
-    });
-
-    document.addEventListener('keyup', function(event) {
-        keysPressed[event.key] = false;
-    });
+    
