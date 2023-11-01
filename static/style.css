@@ -6,12 +6,17 @@ body{
     display: none;
 }
 img#sniper{
+    display:none;
+    opacity:1;
+    transition:opacity 1s;
     margin-top:65px;
-    margin-right:600px;
+    margin-right:300px;
     width:250px;
     height:250px;
 }
 img#sf{
+    opacity:1;
+    transition:opacity 1s;
     width:350px;
     height: 350px;
     margin-left: 100px;
