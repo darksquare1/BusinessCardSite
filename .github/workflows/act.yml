@@ -1,7 +1,7 @@
 name: VisitCardDeploy
 on: push
 jobs:
-	deploy:
+    deploy:
         runs-on: ubuntu-latest
     steps:
        - name: Check
