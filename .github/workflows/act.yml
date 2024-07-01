@@ -1,9 +1,9 @@
 name: VisitCardDeploy
 on: push
 jobs:
-	lint:
-		runs-on: ubuntu-latest
-		steps:
-			name: Checkout
-			uses: actions/checkout@v4
+	deploy:
+        runs-on: ubuntu-latest
+    steps:
+       - name: Check
+         uses: actions/checkout@v4
 			
