@@ -1,2 +1,2 @@
 # BusinessCardSite
-https://dobrynskii.ru/
+[Перейти](https://main--rzdvvvsua.netlify.app/)
